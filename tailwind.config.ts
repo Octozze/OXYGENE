@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,23 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				sao2: {
+					blue: {
+						light: '#68B9F2',
+						DEFAULT: '#1EAEDB',
+						dark: '#0C6B96'
+					},
+					green: {
+						light: '#A0E4B0',
+						DEFAULT: '#5CB85C',
+						dark: '#3D7B3D'
+					},
+					gray: {
+						light: '#F8F9FA',
+						DEFAULT: '#E9ECEF',
+						dark: '#6C757D'
+					}
 				}
 			},
 			borderRadius: {
@@ -84,11 +102,30 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					from: {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					to: {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.5s ease-out forwards'
+			},
+			fontFamily: {
+				sans: ['Inter', 'sans-serif'],
+				heading: ['Montserrat', 'sans-serif']
+			},
+			backgroundImage: {
+				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+				'hero-pattern': 'linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), url("/images/hero-bg.jpg")'
 			}
 		}
 	},
