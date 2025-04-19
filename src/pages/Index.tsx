@@ -4,7 +4,7 @@ import Hero from '@/components/Hero';
 import ServiceCard from '@/components/ServiceCard';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { Oxygen, Home, Medkit } from 'lucide-react';
+import { Hospital, Home, BriefcaseMedical } from 'lucide-react';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 
@@ -14,7 +14,7 @@ const Index = () => {
     {
       title: 'Oxygène Médical',
       description: 'Dispensation à domicile d\'oxygène médical pour les patients nécessitant une thérapie respiratoire continue ou temporaire.',
-      icon: <Oxygen size={24} />
+      icon: <Hospital size={24} />
     },
     {
       title: 'Hospitalisation À Domicile',
@@ -24,7 +24,7 @@ const Index = () => {
     {
       title: 'Matériel Médical',
       description: 'Production, distribution, location et entretien d\'équipements médicaux pour les patients et les professionnels de santé.',
-      icon: <Medkit size={24} />
+      icon: <BriefcaseMedical size={24} />
     }
   ];
 

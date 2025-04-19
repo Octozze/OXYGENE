@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Oxygen, Home, Medkit, Thermometer, Hospital, Bed } from 'lucide-react';
+import { Hospital, Home, BriefcaseMedical, Thermometer, Bed, Ambulance } from 'lucide-react';
 import ServiceCard from '@/components/ServiceCard';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -10,7 +10,7 @@ const Services = () => {
     {
       title: 'Oxygène Médical à Domicile',
       description: 'Fourniture d\'oxygène médical à domicile pour les patients souffrant de maladies respiratoires chroniques ou temporaires. Incluant la mise en place, le suivi et l\'entretien des équipements.',
-      icon: <Oxygen size={24} />
+      icon: <Hospital size={24} />
     },
     {
       title: 'Equipement d\'Hospitalisation à Domicile',
@@ -20,7 +20,7 @@ const Services = () => {
     {
       title: 'Matériel Médical Spécialisé',
       description: 'Distribution, location et vente de matériel médical spécialisé pour les besoins spécifiques des patients et des professionnels de la santé.',
-      icon: <Medkit size={24} />
+      icon: <BriefcaseMedical size={24} />
     },
     {
       title: 'Monitoring et Suivi Patient',
@@ -30,7 +30,7 @@ const Services = () => {
     {
       title: 'Coordination avec les Établissements de Santé',
       description: 'Services de coordination entre les hôpitaux, les médecins et les soins à domicile pour assurer une continuité des soins optimale.',
-      icon: <Hospital size={24} />
+      icon: <Ambulance size={24} />
     },
     {
       title: 'Équipement de Confort Patient',
@@ -127,7 +127,7 @@ const Services = () => {
               <div className="flex">
                 <div className="shrink-0 mr-6">
                   <div className="w-16 h-16 rounded-full bg-sao2-blue/10 flex items-center justify-center">
-                    <Oxygen className="w-8 h-8 text-sao2-blue" />
+                    <Hospital className="w-8 h-8 text-sao2-blue" />
                   </div>
                 </div>
                 <div>
@@ -144,7 +144,7 @@ const Services = () => {
               <div className="flex">
                 <div className="shrink-0 mr-6">
                   <div className="w-16 h-16 rounded-full bg-sao2-green/10 flex items-center justify-center">
-                    <Hospital className="w-8 h-8 text-sao2-green" />
+                    <Ambulance className="w-8 h-8 text-sao2-green" />
                   </div>
                 </div>
                 <div>
@@ -178,7 +178,7 @@ const Services = () => {
               <div className="flex">
                 <div className="shrink-0 mr-6">
                   <div className="w-16 h-16 rounded-full bg-sao2-green/10 flex items-center justify-center">
-                    <Medkit className="w-8 h-8 text-sao2-green" />
+                    <BriefcaseMedical className="w-8 h-8 text-sao2-green" />
                   </div>
                 </div>
                 <div>
